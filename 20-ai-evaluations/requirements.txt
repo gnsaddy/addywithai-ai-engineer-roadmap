@@ -1,0 +1,1 @@
+# Nothing to install: this demo uses only the Python standard library (3.9+).

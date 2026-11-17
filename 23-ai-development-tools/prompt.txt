@@ -1,0 +1,4 @@
+Goal: fix split_bill so the shares always add up to the bill.
+Context: 1000 split 3 ways gives 333.33 x 3 = 999.99. One paisa is lost.
+Constraints: keep the function signature. No new libraries. Do not edit the tests.
+Done when: python -m pytest -q passes. Show me the diff before you finish.

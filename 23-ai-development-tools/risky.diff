@@ -1,0 +1,24 @@
+--- a/split.py
++++ b/split.py
+@@ -1,4 +1,7 @@
+ # split.py: split a restaurant bill between friends (tiny demo project for Episode 23)
++import requests
++
++api_key = "sk-demo1234567890abcdefXYZ"   # fake key, for this demo only
+ 
+ 
+ def split_bill(total, people, tip_pct=0):
+--- a/test_split.py
++++ b/test_split.py
+@@ -12,11 +12,6 @@
+     assert sum(split_bill(1000, 4, tip_pct=10)) == 1100.0
+ 
+ 
+-def test_shares_add_up_to_the_bill():
+-    shares = split_bill(1000, 3)
+-    assert round(sum(shares), 2) == 1000.0     # nobody pays a paisa too little
+-
+-
+ def test_needs_people():
+     with pytest.raises(ValueError):
+         split_bill(500, 0)

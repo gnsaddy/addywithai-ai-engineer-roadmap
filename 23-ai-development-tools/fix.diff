@@ -1,0 +1,13 @@
+--- a/split.py
++++ b/split.py
+@@ -5,6 +5,7 @@
+     """Return each person's share in rupees, rounded to 2 decimals."""
+     if people < 1:
+         raise ValueError("people must be at least 1")
+-    grand = total * (1 + tip_pct / 100)
+-    share = round(grand / people, 2)
+-    return [share] * people
++    paise = round(total * (1 + tip_pct / 100) * 100)   # work in whole paise
++    base, extra = divmod(paise, people)
++    # the first `extra` people pay one paisa more, so the sum is exact
++    return [(base + (i < extra)) / 100 for i in range(people)]

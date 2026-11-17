@@ -1,0 +1,6 @@
+numpy
+pillow
+scipy
+soundfile
+kokoro-onnx==0.6.1
+sherpa-onnx==2.0.1

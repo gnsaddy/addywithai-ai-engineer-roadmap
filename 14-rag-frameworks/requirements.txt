@@ -1,0 +1,4 @@
+pypdf>=4.0
+langchain-core>=1.0
+langchain-text-splitters>=1.0
+llama-index-core>=0.14
