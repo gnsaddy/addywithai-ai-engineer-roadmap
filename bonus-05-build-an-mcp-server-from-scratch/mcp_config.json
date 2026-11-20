@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pageturn-books": {
+      "command": "python",
+      "args": ["C:\\mcp-from-scratch\\server.py"]
+    }
+  }
+}

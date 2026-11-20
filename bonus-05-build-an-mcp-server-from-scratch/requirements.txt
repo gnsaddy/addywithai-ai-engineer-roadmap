@@ -1,0 +1,3 @@
+pydantic>=2.6
+# optional, only for check_with_sdk.py (the server itself uses no MCP SDK):
+# mcp>=2.3

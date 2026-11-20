@@ -38,6 +38,7 @@ Never commit your `.env` file. It is already listed in `.gitignore`.
 | 15 | AI Agents | [15-ai-agents](15-ai-agents) |
 | 16 | AI Agent Frameworks | [16-ai-agent-frameworks](16-ai-agent-frameworks) |
 | 17 | MCP (Model Context Protocol) | [17-mcp](17-mcp) |
+| Bonus B5 | Build an MCP Server from Scratch: a hand-written MCP server (JSON-RPC over stdio, no SDK) with a read-only SQLite tool, a stand-in internal API tool and a tiny client | [bonus-05-build-an-mcp-server-from-scratch](bonus-05-build-an-mcp-server-from-scratch) |
 | 18 | AI Safety & Security | [18-ai-safety-security](18-ai-safety-security) |
 | 19 | AI Observability | [19-ai-observability](19-ai-observability) |
 | 20 | AI Evaluations | [20-ai-evaluations](20-ai-evaluations) |
